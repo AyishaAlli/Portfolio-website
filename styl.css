@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+    outline: none;
+}
+
+/* Header */
+body{
+    font-family: sans-serif;
+    position: relative; 
+    background-image:url('https://www.bypeople.com/wp-content/uploads/2014/05/light-live-background-css.jpg') ;
+    background-attachment: fixed;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    background-color:lightgray;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    
+}
+.nav-links.show{
+    display: flex;  
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+}
+
+.link:hover{
+  color: white;
+}
+
+.bars-icon{
+    display: none;
+    color: black;
+    border: none;
+    background-color: transparent;
+
+}
+
+@media (max-width:1000px){
+    nav{
+        justify-content: flex-end;
+    }
+    .bars-icon{
+        display: flex;
+        
+    }
+
+    .nav-links{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        display: none;
+        
+    }
+   
+   
+}
+
+/* Main Section */
+
+
+.wrapper{
+    margin-top: 210px;
+    margin-bottom: 210px;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ProfilePic{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    border:3px solid;
+}
+
+.text h2{
+    margin-bottom: 1em;
+}
+
+.text li{
+    list-style-position: inside;
+    list-style-type: square;
+    margin-top: 1em;
+    
+}
+
+/* Portfolio Section */
+.portfolio{
+    background-color: black;
+    padding:10px;
+    padding-bottom: 40px;
+}
+.title{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 3em;
+    color: white;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.each-portfolio{
+    margin:0px 15px 15px 15px;
+
+}
+
+figcaption{
+    text-align: center;
+    color: white;
+}
+
+figure:hover, figcaption:hover{
+    transform: scale(1.1);
+}
+
+.portfolio-btn{
+    text-align: center;
+}
+.more-btn{
+    border: 1px solid;
+    padding: 10px;
+    
+   
+}
+.more-btn:hover{
+    
+    background-color: black;
+    color:white;
+}
+
+@media (max-width: 850px){
+    .wrapper{
+        flex-direction: column;
+        margin: 50px 50px 0px 50px;
+    }
+    .ProfilePic{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .text, .text li{
+        text-align: center;
+        list-style: none;
+        
+    }
+}
+
+
+
+/* Email Subcription */
+.email-sub{
+    background-color: lightgray;
+    padding: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Social Icons */
+.social-icons{
+    margin:100px 0px 150px 0px;
+    font-size: 80px;
+    text-align: center;
+}
+i{
+    color: black;
+}
+i:hover{
+    transform: scale(1.1);
+}
+
+
+/* FOOTER */
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    }
+
+/*
+
+  p{
+   text-align: center;
+  }
+  
+  
+  p1{
+   font-family: sans-serif;
+   font-size:13px;
+   line-height:25px;
+   color: grey;
+  }
+  
+  .NavBar{
+   text-align: right;
+  }
+  
+  <!--.container{
+    height:100vh;
+    position: relative;
+    }
+  -->
+  .wrapper{
+    display:flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+  }
+  .ProfilePic{
+    margin-top: 4em;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border:3px solid;
+    float: right;
+    }
+  
+  ul{
+    list-style: none;
+    margin-top: 30px;
+    line-height: 30px;
+    font-family: sans-serif;
+  } 
+  
+  .button{
+  box-shadow: 2px 2px 1px 0 grey
+  } 
+  
+  .footers{
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  }
+  */
